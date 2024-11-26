@@ -3,7 +3,7 @@
     background-position: 0px 0px;
   width: 512px;
   height: 512px;
-  background: url(board.png) left center;
+  background: url(SMX_spritesheet.png) left center; /* credit from Pete Lawrence */
 }
 
 .custom .button,
