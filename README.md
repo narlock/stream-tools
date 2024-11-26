@@ -1,3 +1,3 @@
 # Stream Tools
 
-Various stream tools for streams.
+Various stream tools for streams
