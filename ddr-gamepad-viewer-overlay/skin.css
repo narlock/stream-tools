@@ -1,0 +1,69 @@
+.controller.custom {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 512px;
+    height: 512px;
+    background: url(png/SMX_spritesheet.png) center center; /* Static background for the controller */
+    position: relative;
+}
+
+.custom .button,
+.custom .back,
+.custom .bumper,
+.custom .trigger-button {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+}
+
+/* Button states for Up, Down, Left, and Right */
+
+/* Up (X) */
+.custom .button.up {
+    background: url(png/SMX_spritesheet_Up.png) no-repeat center center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+/* Down (Y) */
+.custom .button.down {
+    background: url(png/SMX_spritesheet_Down.png) no-repeat center center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+/* Left (A) */
+.custom .button.left {
+    background: url(png/SMX_spritesheet_Left.png) no-repeat center center;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+/* Right (B) */
+.custom .button.right {
+    background: url(png/SMX_spritesheet_Right.png) no-repeat center center;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+/* Optional: Center the controller statically on the screen */
+.controller.custom {
+    margin: auto;
+    position: relative;
+}
