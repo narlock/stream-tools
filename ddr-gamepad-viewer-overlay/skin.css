@@ -1,69 +1,36 @@
-.controller.custom {
+.controller.custom{
     background-repeat: no-repeat;
-    background-position: center;
-    width: 512px;
-    height: 512px;
-    background: url(board.png) center center; /* Static background for the controller */
-    position: relative;
+    background-position: 0px 0px;
+  width: 512px;
+  height: 512px;
+  background: url(png/SMX_spritesheet.png) left center;
 }
 
 .custom .button,
 .custom .back,
 .custom .bumper,
-.custom .trigger-button {
+.custom .trigger-button{
     position: absolute;
     width: 512px;
     height: 512px;
 }
 
-/* Button states for Up, Down, Left, and Right */
-
-/* Up (X) */
-.custom .button.up {
-    background: url(up.png) no-repeat center center;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+.custom .y.pressed{
+background: url(down.png);
 }
 
-/* Down (Y) */
-.custom .button.down {
-    background: url(down.png) no-repeat center center;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+.custom .a.pressed{
+background: url(left.png);
 }
 
-/* Left (A) */
-.custom .button.left {
-    background: url(left.png) no-repeat center center;
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 100px;
+.custom .b.pressed{
+background: url(right.png);
 }
 
-/* Right (B) */
-.custom .button.right {
-    background: url(right.png) no-repeat center center;
-    position: absolute;
-    top: 50%;
-    right: 50px;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 100px;
+.custom .x.pressed{
+background: url(up.png);
 }
 
-/* Optional: Center the controller statically on the screen */
-.controller.custom {
-    margin: auto;
-    position: relative;
+.custom.half{
+    margin-top: -256px;
 }
