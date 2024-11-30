@@ -30,13 +30,24 @@ public class ELOOverlay extends JFrame {
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         setSize(400, 300);
 
-        // Theme dropdown at the top
+        // Theme dropdown and Exit button panel
         JPanel themePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         themePanel.setOpaque(false);
         JComboBox<String> themeDropdown = new JComboBox<>(new String[]{"Basic", "CS2"});
         themeDropdown.addActionListener(e -> applyTheme((String) themeDropdown.getSelectedItem()));
+
+        JButton exitButton = new JButton("Exit");
+        exitButton.addActionListener(e -> {
+            int response = JOptionPane.showConfirmDialog(this, "Are you sure you want to exit?", "Exit Confirmation",
+                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+            if (response == JOptionPane.YES_OPTION) {
+                System.exit(0);
+            }
+        });
+
         themePanel.add(new JLabel("Theme:"));
         themePanel.add(themeDropdown);
+        themePanel.add(exitButton);
 
         // Add draggable area
         JPanel draggableArea = new JPanel();
