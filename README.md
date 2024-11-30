@@ -14,6 +14,8 @@ Various simple stream tools for live streams and broadcasts.
 ## DDR pad overlay
 1. [Version 1 (Simple)](https://gamepadviewer.com/?p=1&css=https://narlock.github.io/stream-tools/ddr-gamepad-viewer-overlay/simple/skin.css)
 2. [Version 2 (UKR Edit)](https://gamepadviewer.com/?p=1&css=https://narlock.github.io/stream-tools/ddr-gamepad-viewer-overlay/ukr-glow/skin.css)
+3. [Version 3 (ITG Simple)](https://gamepadviewer.com/?p=1&css=https://narlock.github.io/stream-tools/ddr-gamepad-viewer-overlay/itg-simple/skin.css)
+4. [Version 4 (Glow ITG)](https://gamepadviewer.com/?p=1&css=https://narlock.github.io/stream-tools/ddr-gamepad-viewer-overlay/glow-itg/skin.css)
 
 ![DDR Board](https://raw.githubusercontent.com/narlock/stream-tools/refs/heads/main/ddr-gamepad-viewer-overlay/simple/board.png)
 

@@ -1,0 +1,36 @@
+.controller.custom{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  width: 512px;
+  height: 512px;
+  background: url(board.png) center center;
+}
+
+.custom .button,
+.custom .back,
+.custom .bumper,
+.custom .trigger-button{
+    position: absolute;
+    width: 512px;
+    height: 512px;
+}
+
+.custom .y.pressed{
+background: url(down.png);
+}
+
+.custom .a.pressed{
+background: url(left.png);
+}
+
+.custom .b.pressed{
+background: url(right.png);
+}
+
+.custom .x.pressed{
+background: url(up.png);
+}
+
+.custom.half{
+    margin-top: -256px;
+}
